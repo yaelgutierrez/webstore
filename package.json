@@ -1,0 +1,19 @@
+{
+  "name": "webstore",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yael.e.gutierrez@gmail.com",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google-cloud/local-auth": "^2.1.0",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "googleapis": "^105.0.0",
+    "mercadopago": "^1.5.17"
+  }
+}
