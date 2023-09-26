@@ -1,8 +1,7 @@
 body {
     margin: 0px;
     background-color: aliceblue;
-    font-family: 'Lora', serif;
-
+    font-family: 'Nerko One', cursive;
 }
 
 button {
@@ -38,6 +37,12 @@ button {
 }
 
 .page-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.product-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -83,10 +88,11 @@ button {
     background-color: #4CAF50; /* Green */
     color: white;
 }
-.button-add.disabled{
+
+.button-add.disabled {
     background-color: white;
     color: black;
-    border: 2px solid #90a291; 
+    border: 2px solid #9e9e9e; 
     transition-duration: 0.4s;
     position: absolute;
     right: 15px;
@@ -94,6 +100,49 @@ button {
 }
   
 .button-add.disabled:hover {
-    background-color: #90a291; 
+    background-color: #9e9e9e; 
     color: white;
+}
+
+.order {
+    min-width: 75%;
+    display: none;
+}
+
+.order-table {
+    width: 100%;
+    text-align: center;
+    font-size: large;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #9e9e9e;
+}
+
+.order-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.order-actions p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.order-actions p:hover {
+    cursor: pointer;
+}
+
+.order-shipping {
+    font-size: large;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #9e9e9e;
+}
+
+.order-shipping .form-group {
+    padding-bottom: 5px;
+}
+
+input {
+    border-radius: 4px;
+    border: 1px solid #9e9e9e;
 }
